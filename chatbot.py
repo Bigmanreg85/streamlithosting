@@ -1,12 +1,12 @@
 
 import streamlit as st
 import openai
-import os
-from dotenv import load_dotenv
+#import os
+#from dotenv import load_dotenv
 
-load_dotenv()  # Load environment variables from .env file
+#load_dotenv()  # Load environment variables from .env file
 
-api_key = os.getenv('openaikey')  # Get the value of the API_KEY variable
+#api_key = os.getenv('openaikey')  # Get the value of the API_KEY variable
 
 st.title("Richard Nero's ChatGPT API")
 st.sidebar.header("Instructions")
@@ -20,7 +20,7 @@ st.sidebar.info(
 
 # Set the model engine and your OpenAI API key
 model_engine = "text-davinci-003"
-openai.api_key = api_key
+openai.api_key = apikey_streamlit
 
 def main():
     '''

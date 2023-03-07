@@ -20,7 +20,7 @@ st.sidebar.info(
 
 # Set the model engine and your OpenAI API key
 model_engine = "text-davinci-003"
-openai.api_key = apikey_streamlit
+openai.api_key = st.secrets["apikey_streamlit"]
 
 def main():
     '''

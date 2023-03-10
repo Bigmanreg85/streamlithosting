@@ -34,7 +34,7 @@ if user_input:
 	# Display the chart
 	st.plotly_chart(fig, use_container_width=True)
 
-	#st.write(scores)
+	st.audio("welcome.ogg")
 
 	if scores['compound'] > 0.05:
 		msg = 'That had a positive sentiment'

@@ -12,6 +12,7 @@ st.title("Richard Nero's Sentiment Analyser")
 st.subheader("Input your text below to analyse the sentiment and chart the output")
 
 user_input = st.text_input("Enter some text:")
+st.audio("welcome.ogg")
 
 scores = sia.polarity_scores(user_input)
 
@@ -33,8 +34,6 @@ if user_input:
 
 	# Display the chart
 	st.plotly_chart(fig, use_container_width=True)
-
-	st.audio("welcome.ogg")
 
 	if scores['compound'] > 0.05:
 		msg = 'That had a positive sentiment'
